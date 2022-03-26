@@ -1,0 +1,16 @@
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\bin\Debug\WPFhello.exe.config
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\bin\Debug\WPFhello.exe
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\bin\Debug\WPFhello.pdb
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.csproj.AssemblyReference.cache
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.csproj.SuggestedBindingRedirects.cache
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\MainWindow.g.cs
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\App.g.cs
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello_MarkupCompile.cache
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello_MarkupCompile.lref
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\MainWindow.baml
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.g.resources
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.Properties.Resources.resources
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.csproj.GenerateResource.cache
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.csproj.CoreCompileInputs.cache
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.exe
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.pdb
