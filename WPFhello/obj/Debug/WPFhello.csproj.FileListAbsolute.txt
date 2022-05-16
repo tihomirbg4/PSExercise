@@ -14,3 +14,5 @@ C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhell
 C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.csproj.CoreCompileInputs.cache
 C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.exe
 C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\WPFhello.pdb
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\MyMessage.g.cs
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\WPFhello\obj\Debug\MyMessage.baml

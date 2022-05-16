@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WPFhello
 {
@@ -23,6 +12,14 @@ namespace WPFhello
         public MainWindow()
         {
             InitializeComponent();
+            ListBoxItem james = new ListBoxItem();
+            james.Content = "James";
+            peopleListBox.Items.Add(james);
+            ListBoxItem david = new ListBoxItem();
+            david.Content = "David";
+            peopleListBox.Items.Add(david);
+
+            peopleListBox.SelectedItem = james;
         }
 
         private void btnHello_Click(object sender, RoutedEventArgs e)
@@ -55,6 +52,16 @@ namespace WPFhello
             MessageBox.Show("This is Windows Presentation Foundation!");
 
             textBlock1.Text = DateTime.Now.ToString();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string greetingMessage;
+
+            greetingMessage = (peopleListBox.SelectedItem as ListBoxItem).Content.ToString();
+
+            MyMessage secondWindow = new MyMessage();
+            secondWindow.Show();
         }
     }
 }

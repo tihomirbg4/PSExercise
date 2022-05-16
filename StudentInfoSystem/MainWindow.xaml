@@ -4,8 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentInfoSystem"
+        xmlns:vm="clr-namespace:StudentInfoSystem"
         mc:Ignorable="d"
         Title="Студентска информационна система" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:MainFormVM/>
+    </Window.DataContext>
     <Grid x:Name="mainGrid" RenderTransformOrigin="0.546,0.431">
         <Label Content="Лични данни" HorizontalAlignment="Left" Margin="73,26,0,0" VerticalAlignment="Top"/>
         <Label Content="Име:" HorizontalAlignment="Left" Margin="84,57,0,0" VerticalAlignment="Top"/>
@@ -18,23 +22,26 @@
         <Label Content="Факултет:" HorizontalAlignment="Left" Margin="85,191,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="faculty" HorizontalAlignment="Left" Margin="210,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
         <Label Content="Специалност:" HorizontalAlignment="Left" Margin="85,227,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="specialty" HorizontalAlignment="Left" Margin="210,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
+        <TextBox x:Name="major" HorizontalAlignment="Left" Margin="210,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
         <Label Content="ОКС:" HorizontalAlignment="Left" Margin="96,264,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="QualificationDegree" HorizontalAlignment="Left" Margin="210,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
-        <Label Content="Статус:" HorizontalAlignment="Left" Margin="99,297,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="status" HorizontalAlignment="Left" Margin="210,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
-        <Label Content="Фак. номер:" HorizontalAlignment="Left" Margin="96,331,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="facultyNumber" HorizontalAlignment="Left" Margin="210,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
+        <Label Content="Статус:" HorizontalAlignment="Left" Margin="102,313,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.439,1.535"/>
+        <Label Content="Фак. номер:" HorizontalAlignment="Left" Margin="102,389,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="facultyNumber" HorizontalAlignment="Left" Margin="211,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
         <Label Content="Курс:" HorizontalAlignment="Left" Margin="492,187,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="course" HorizontalAlignment="Left" Margin="547,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Height="22"/>
         <Label Content="Поток:" HorizontalAlignment="Left" Margin="492,222,0,0" VerticalAlignment="Top"/>
         <Label Content="Курс:" HorizontalAlignment="Left" Margin="492,187,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="flow" HorizontalAlignment="Left" Margin="547,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Height="22"/>
+        <TextBox x:Name="stream" HorizontalAlignment="Left" Margin="547,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Height="22"/>
         <Label Content="Група:" HorizontalAlignment="Left" Margin="492,261,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="group" HorizontalAlignment="Left" Margin="547,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Height="22"/>
         <Button x:Name="btnEnable" Content="Отключи контролите" HorizontalAlignment="Left" Margin="429,303,0,0" VerticalAlignment="Top" Click="btnEnable_Click"/>
         <Button x:Name="btnDisable" Content="Заключи контролите" HorizontalAlignment="Left" Margin="429,338,0,0" VerticalAlignment="Top" Click="btnDisable_Click"/>
         <Button x:Name="btnStudentInfo" Content="Попълни данни" HorizontalAlignment="Left" Margin="429,379,0,0" VerticalAlignment="Top" Click="btnStudentInfo_Click"/>
         <Button x:Name="btnClear" Content="Изтрий данни" HorizontalAlignment="Left" Margin="547,379,0,0" VerticalAlignment="Top" Click="btnClear_Click"/>
+        <Button Content="Test" Command="{Binding TestCommand}" HorizontalAlignment="Left" Margin="382,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.298,-0.188" Height="31" Width="92"/>
+        <ListBox x:Name="statusList" d:ItemsSource="{Binding Path =StudStatusChoices}"  HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="190" ItemsSource="{Binding Path=StudStatusChoices}" Margin="210,301,0,0"/>
     </Grid>
+
+
 </Window>

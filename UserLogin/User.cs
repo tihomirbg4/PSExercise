@@ -8,6 +8,7 @@ namespace UserLogin
 {
     public class User
     {
+        public Int32 UserId {  get; set; }
         public string Username
         {
             get;

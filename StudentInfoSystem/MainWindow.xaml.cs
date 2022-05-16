@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace StudentInfoSystem
 {
@@ -22,10 +24,14 @@ namespace StudentInfoSystem
     {
 
         Student student = StudentData.TestStudents[0];
+
         public MainWindow()
         {
             InitializeComponent();
+            
         }
+
+        public List<string> StudStatusChoices { get; set; }
 
         private void btnHello_Click(object sender, RoutedEventArgs e)
         {
@@ -67,9 +73,9 @@ namespace StudentInfoSystem
                                 textBox.Text = student.faculty;
                                 break;
                             }
-                        case "specialty":
+                        case "major":
                             {
-                                textBox.Text = student.specialty;
+                                textBox.Text = student.major;
                                 break;
                             }
                         case "QualificationDegree":
@@ -92,9 +98,9 @@ namespace StudentInfoSystem
                                 textBox.Text = student.course.ToString();
                                 break;
                             }
-                        case "flow":
+                        case "stream":
                             {
-                                textBox.Text = student.flow.ToString();
+                                textBox.Text = student.stream.ToString();
                                 break;
                             }
                         case "group":
@@ -151,5 +157,6 @@ namespace StudentInfoSystem
         {
             clearTxtBoxes();
         }
+
     }
 }

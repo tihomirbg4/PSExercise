@@ -9,6 +9,7 @@ namespace UserLogin
     static public class UserData
     {
         private static List<User> _newTestUser;
+
         static private void ResetTestUserData()
         {
             if (_newTestUser == null)
@@ -63,7 +64,9 @@ namespace UserLogin
 
         static public User isUserPassCorrect(string username, string password)
         {
-            User user = (from u in TestUsers where u.Password.Equals(password) select u).First();
+            UserContext context = new UserContext();
+
+            User user = (from u in context.Users where u.Password.Equals(password) select u).First();
 
 
             return user;
@@ -84,19 +87,21 @@ namespace UserLogin
 
         static public void AssignUserRole(string username, UserRoles newRole)
         {
-            foreach (User user in TestUsers)
-            {
-                if (user.Username.Equals(username))
-                {
-                    user.Role = newRole;
-                    Logger.LogActivity("Промяна на роля на " + username + ", нова роля " + newRole);
-                }
-            }
+            UserContext context = new UserContext();
+
+            User user = (from u in context.Users
+                        where u.Username.Equals(username)
+                        select u).First();
+
+            user.Role = newRole;
+            Logger.LogActivity("Промяна на роля на " + username + ", нова роля " + newRole);
+
+            context.SaveChanges();
         }
 
         public static void UserList()
         {
-            foreach (User user in _newTestUser)
+            foreach (User user in TestUsers)
             {
                 Console.WriteLine(user.Username);
             }

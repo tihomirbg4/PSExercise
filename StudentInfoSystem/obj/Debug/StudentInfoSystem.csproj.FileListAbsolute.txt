@@ -38,3 +38,10 @@ C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\obj\Debu
 C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\obj\Debug\StudentInfoSystem.csproj.CopyComplete
 C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\obj\Debug\StudentInfoSystem.exe
 C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\obj\Debug\StudentInfoSystem.pdb
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\bin\Debug\EntityFramework.dll
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\bin\Debug\EntityFramework.xml
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\obj\Debug\LoginScreen.g.cs
+C:\Users\tihom\OneDrive\Desktop\PS_uprj\PS_31_Tihomir\StudentInfoSystem\obj\Debug\LoginScreen.baml
